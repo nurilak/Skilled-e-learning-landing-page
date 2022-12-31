@@ -151,6 +151,10 @@ h1 {
   padding-left: 28px;
   padding-right: 28px;
 }
+
+.p2 {
+  margin-top: 0;
+}
 .animation > .h2 {
   margin-top: 40px;
 }
@@ -241,7 +245,7 @@ h1 {
   }
   .animation,
   .checkout {
-    min-height: 250px;
+    min-height: 220px;
   }
 }
 
@@ -308,6 +312,6 @@ h1 {
 
   .animation,
   .checkout {
-    min-height: 330px;
+    min-height: 300px;
   }
 }
