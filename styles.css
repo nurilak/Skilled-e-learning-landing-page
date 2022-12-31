@@ -1,0 +1,313 @@
+body {
+  margin: 0;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  font-family: Plus Jakarta Sans, sans-serif;
+}
+.container {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+/* starts div1 section */
+.div1 {
+  margin-top: 1rem;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button {
+  width: 140px;
+  height: 48px;
+  background-color: #13183f;
+  border-radius: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.buttonP {
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* starts div2 section */
+.div2 {
+  width: 90%;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 800;
+  color: #13183f;
+}
+
+.p1 {
+  font-weight: 500;
+  font-size: 16px;
+  color: #83869a;
+  line-height: 26px;
+}
+
+.div2 > .text > .button {
+  background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+  border-radius: 31.5px;
+}
+
+.firstp {
+  padding: 0;
+}
+
+/* hiding tablet and dekstop images */
+
+.mobile_img {
+  width: 100%;
+}
+
+.tablet_img {
+  display: none;
+}
+
+.desktop_img {
+  display: none;
+}
+
+/* starts div3 section */
+
+.div3 {
+  background: linear-gradient(180deg, #ffffff 0%, #f0f1ff 100%);
+  display: flex;
+  justify-content: center;
+}
+
+.div3container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 40px;
+}
+
+.checkout {
+  width: 90%;
+  height: 120px;
+  background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+  border-radius: 10px;
+}
+
+.checkout > p {
+  font-size: 24px;
+  font-weight: 800;
+  color: white;
+}
+
+.h2 {
+  font-size: 20px;
+  font-weight: 800;
+  color: #13183f;
+  margin-top: 3.5rem;
+}
+
+.ebutton > p {
+  font-size: 18px;
+  font-weight: 700;
+  color: #f74780;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.animation {
+  border-radius: 10px;
+  position: relative;
+  background-color: white;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.animation_image {
+  position: absolute;
+  left: 28px;
+  top: -25px;
+}
+
+.animation > .h2,
+.p2 {
+  padding-left: 28px;
+  padding-right: 28px;
+}
+.animation > .h2 {
+  margin-top: 40px;
+}
+
+.lastanim {
+  margin-bottom: 80px;
+}
+
+/* starts last section */
+.bg {
+  background-color: #13183f;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.last {
+  width: 90%;
+  height: 120px;
+}
+
+.last > .button {
+  background: linear-gradient(180deg, #4851ff 0%, #f02aa6 100%);
+}
+
+.spacer {
+  display: none;
+}
+/* starts media query for tablets */
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 100%;
+  }
+
+  .mobile_img {
+    display: none;
+  }
+
+  .text {
+    width: 60%;
+    margin-top: 125px;
+  }
+
+  .div2 {
+    margin-bottom: 210px;
+  }
+
+  .tablet_img {
+    display: block;
+    max-width: 100%;
+  }
+
+  .image {
+    display: block;
+    position: absolute;
+    top: -80px;
+    right: -300px;
+    width: 700px;
+  }
+
+  .animation,
+  .checkout {
+    width: 47%;
+  }
+
+  .checkout {
+    height: 240px;
+  }
+  .checkout > p {
+    margin-top: 40px;
+  }
+
+  .div3container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .lastanim {
+    margin-bottom: 0;
+  }
+
+  .spacer {
+    display: block;
+    width: 100%;
+    height: 30px;
+    opacity: 0;
+  }
+  .animation,
+  .checkout {
+    min-height: 250px;
+  }
+}
+
+/* stars media query for desktop */
+
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 100%;
+  }
+
+  .tablet_img {
+    display: none;
+  }
+
+  .desktop_img {
+    display: block;
+    max-width: 100%;
+  }
+
+  .image {
+    width: 900px;
+    top: -110px;
+    right: -270px;
+  }
+
+  .animation,
+  .checkout {
+    width: 30%;
+  }
+
+  .button {
+    width: 167px;
+    height: 56px;
+  }
+
+  .buttonP {
+    font-size: 18px;
+  }
+
+  .header {
+    font-size: 56px;
+  }
+
+  .p1 {
+    font-size: 18px;
+  }
+
+  .checkout > p {
+    font-size: 32px;
+  }
+
+  .div1,
+  .div2 {
+    width: 80%;
+  }
+
+  .text {
+    width: 40%;
+  }
+
+  .div3container {
+    width: 80%;
+  }
+
+  .animation,
+  .checkout {
+    min-height: 330px;
+  }
+}
