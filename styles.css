@@ -120,7 +120,6 @@ h1 {
   font-weight: 800;
   color: #13183f;
   margin-top: 3.5rem;
-  margin-bottom: 0;
 }
 
 .ebutton > p {
@@ -314,5 +313,9 @@ h1 {
   .animation,
   .checkout {
     min-height: 300px;
+  }
+  
+  .h2 {
+    margin-bottom: 0;
   }
 }
